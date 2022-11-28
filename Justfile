@@ -4,9 +4,7 @@ CP_URL := "https://codeload.github.com/ClassicPress/ClassicPress-release/zip/ref
 download-classicpress:
     wget {{CP_URL}} -O cp.zip
     unzip cp.zip
-
-setup:
     ln -s "$(realpath src)" "$(realpath ClassicPress-release-*)"/wp-content/themes/gaiale
 
-watch: setup
+watch:
     cd ClassicPress-release-* && {{PHP_EXEC}} -S localhost:51690

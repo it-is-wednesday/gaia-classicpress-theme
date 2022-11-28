@@ -11,7 +11,7 @@ function the_content_trimmed()
 }
 get_header();
 ?>
-<div dir="rtl">
+<div>
     <?php if (have_posts()): ?>
 
     <?php if (is_home() && !is_front_page()): ?>
@@ -22,10 +22,10 @@ get_header();
 
     <?php while (have_posts()): ?>
         <?php the_post(); ?>
-        <?= the_content_trimmed() ?>
         <a href="<?= get_post_permalink() ?>">
             <h1><?= get_the_title() ?></h1>
         </a>
+        <?= the_content_trimmed() ?>
     <?php endwhile; ?>
 
     <?php // Previous/next page navigation.

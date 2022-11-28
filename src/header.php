@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?= get_stylesheet_uri(); ?>" type="text/css" media="screen" />
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body dir="rtl">
     <div class="site-header">
       <a href="/">
         <img src="<?= get_theme_file_uri('assets/banner.webp') ?>" alt="real-gaia"/>
