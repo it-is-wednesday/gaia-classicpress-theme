@@ -8,6 +8,7 @@ html {
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
   background: url("assets/bgpattern.webp");
+  font-family: Arial, sans-serif;
 }
 
 body {
