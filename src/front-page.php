@@ -22,7 +22,7 @@ get_header();
 
     <?php while (have_posts()): ?>
         <?php the_post(); ?>
-        <a href="<?= get_post_permalink() ?>">
+        <a class="index-title" href="<?= get_post_permalink() ?>">
             <h1><?= get_the_title() ?></h1>
         </a>
         <?= the_content_trimmed() ?>

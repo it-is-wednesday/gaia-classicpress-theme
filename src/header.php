@@ -11,6 +11,6 @@
   <body dir="rtl">
     <div class="site-header">
       <a href="/">
-        <img src="<?= get_theme_file_uri('assets/banner.webp') ?>" alt="real-gaia"/>
+        <div>גיא יניב</div>
       </a>
     </div>
