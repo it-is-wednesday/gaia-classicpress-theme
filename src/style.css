@@ -1,6 +1,9 @@
+/* palette: https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41 */
+
 :root {
   --page-padding: 14px;
-  --accent-color: #588157;
+  --small-title-color: #588157;
+  --large-title-color: #3a5a40;
   --bg: #dad7cd;
 }
 
@@ -23,19 +26,38 @@ body {
 }
 
 .site-header a {
-  color: #3a5a40;
+  color: var(--large-title-color);
   text-decoration: none;
   font-size: 10rem;
 }
 
+.post-page {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.modern-footnotes-footnote__note {
+  line-height: 1rem;
+}
+
+.post-page h1 {
+  color: var(--small-title-color);
+}
+
 .index-title {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--small-title-color);
+}
+
+.post-page-post-title {
+  font-size: 4rem;
+  text-align: center;
 }
 
 /* rules for computer screens */
 @media (min-width: 600px) {
   body {
-    max-width: 50rem;
+    max-width: 40rem;
   }
 }
