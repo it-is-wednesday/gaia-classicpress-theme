@@ -32,9 +32,12 @@ body {
 }
 
 .post-page {
-  line-height: 2rem;
   font-size: 1.2rem;
   text-align: justify;
+}
+
+.post-page p {
+  line-height: 2rem;
 }
 
 .modern-footnotes-footnote__note {
